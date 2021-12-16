@@ -1,0 +1,5 @@
+{
+    "dat": "./dat/CThead_256_256_240_uint8.dat",
+    "raw": "./raw/CorCTA_512_512_51_uint16.raw",
+    "nrrd": "./nrrd/I.nrrd"
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+		<meta charset="utf-8">
+	<link href="./vendor.bundle.css" rel="stylesheet"><link href="./main.bundle.css" rel="stylesheet"></head>
+    <body>
+        <div class="gui-container right" id="gui-right"></div>
+        
+        <div id="btn-container" style="position:absolute;width:100vw;left:0;right:0;bottom:0;z-index:99;display:flex;justify-content:center;"></div>
+
+        <div id="message-center">
+            <div class="model-title"> 
+                <span id="model-title-name"> ... </span> 
+                <div class="model-title-supplement">
+                    <span id="model-format" style="color:rgba(144, 143, 241, 0.931)"> ??? </span>
+                    <span id="model-size" style="color:rgb(243, 55, 227)"> ??? </span>
+                </div>
+            </div>
+            <div> K 鍵: 像素校正 [ <span class="off-correction" id="pixel-correction"></span> ] </div>
+            <div> 目前狀態: <span id="current-status" style="color:rgb(255, 230, 146)">  </span> </div>
+        </div>
+
+        <div id="mycanvas"></div>
+        <div id="axes-helper-container" title="按一下回到正中間的位置"></div>
+        <div id="load-file-container"> 
+            <div style="margin:.5rem;"> 
+                <select id="select-volume">
+                    <option value="none"> 選擇 Volume </option>
+                </select>
+            </div>
+            <div id="load-nrrd" class="my-load-btn"> 讀取 NRRD </div>
+            <div id="load-dat" class="my-load-btn"> 讀取 Dat </div>
+            <div id="load-raw" class="my-load-btn"> 讀取 Raw </div>
+            <div id="load-pvm" class="my-load-btn"> 讀取 Pvm </div>
+            <div id="download" class="my-load-btn"> 下載 Raw </div>
+        </div>
+        
+        <div id="md5-container"> -------------------------------- </div>
+        
+        <div id="message-container"></div>
+    <script defer="defer" src="./vendor.bundle.js"></script><script defer="defer" src="./main.bundle.js"></script></body>
+        
+    
+
+</html>
